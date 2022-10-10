@@ -65,13 +65,13 @@
               alt="Green Wooden Drawers"
             />
           </div>
-          <div class="pt-9 grid gap-9">
+          <div class="pt-9 grid gap-5">
             <div class="px-8 grid gap-3">
-              <a href="#" class="block text-[1.05rem] font-bold text-blue-400"
-                >Shift the overall look and feel by adding these wonderful
-                touches to furniture in your home</a
-              >
-              <p class="font-medium text-sm text-blue-300">
+              <p class="block font-bold text-blue-400">
+                Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+              </p>
+              <p class="font-medium text-[0.83rem] text-blue-300">
                 Ever been in a room and felt like something was missing? Perhaps
                 it felt slightly bare and uninviting. I’ve got some simple tips
                 to help you make any room feel complete.
@@ -82,9 +82,9 @@
               id="profile-container"
               class="px-8 py-4 flex items-center justify-between"
             >
-              <div id="profile" class="flex gap-4 items-center justify-between">
+              <div id="profile" class="flex gap-4 items-center">
                 <img
-                  class="w-11 h-11 rounded-full"
+                  class="w-10 h-10 rounded-full"
                   src="./images/avatar-michelle.jpg"
                   alt="Michelle"
                 />
@@ -96,8 +96,11 @@
                 </div>
               </div>
 
-              <div id="socials-container" class="flex gap-5 justify-between">
-                <div id="socials" class="flex gap-4 items-center hidden">
+              <div
+                id="socials-container"
+                class="flex items-center justify-between"
+              >
+                <div id="socials" class="w-full flex gap-4 items-center hidden">
                   <p
                     class="uppercase tracking-[0.3em] font-medium text-xs text-blue-200"
                   >
@@ -145,13 +148,13 @@
                   class="bg-blue-100 rounded-full p-2.5 cursor-pointer"
                 >
                   <svg
-                    id="share-icon"
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
                     height="14"
                   >
                     <path
-                      fill="#6E8098"
+                      id="share-icon"
+                      class="fill-blue-400"
                       d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
                     />
                   </svg>
@@ -180,5 +183,7 @@
         >Shiva Prakash Pendem</a
       >.
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
