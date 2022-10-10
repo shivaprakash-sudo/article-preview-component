@@ -12,18 +12,50 @@
       href="./images/favicon-32x32.png"
     />
 
+    <title>Frontend Mentor | Article preview component</title>
+
     <!-- <style>
       * {
         outline: 1px solid red;
       }
     </style> -->
 
-    <title>Frontend Mentor | Article preview component</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom configuration of tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: {
+                100: "hsl(210, 46%, 95%)",
+                200: "hsl(212, 23%, 69%)",
+                300: "hsl(214, 17%, 51%)",
+                400: "hsl(217, 19%, 35%)",
+              },
+            },
+            fontFamily: {
+              sans: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <main>
       <section
-        class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+        class="max-w-[90%] mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
       >
         <article class="md:flex">
           <div class="md:shrink-0">
