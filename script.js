@@ -14,7 +14,19 @@ window.onload = () => {
 
   function toggleContainerOnClick(container, clickableContainer) {
     return clickableContainer.addEventListener("click", () => {
+      const body = document.body;
+
       toggleClass("hidden", container);
+
+      if (
+        clickableContainer === iconShareContainer &&
+        body.clientWidth > 1024
+      ) {
+        const iconShare = document.querySelector("#share-icon");
+        toggleClass("bg-blue-300", clickableContainer);
+        toggleClass("fill-blue-400", iconShare);
+        toggleClass("fill-white", iconShare);
+      }
     });
   }
 };
